@@ -1,0 +1,34 @@
+Create a new repo on GitHub and call it basic_repo:
+Step 1 - Went to Github.com and created a new repo. and named it basic_repo.
+https://github.com/michaelquon/basic_repo.git
+
+Create a local repository also called basic_repo
+mquon@LAPTOP-ORION MINGW64 /
+$ cd
+
+mquon@LAPTOP-ORION MINGW64 ~ (master)
+$ cd d:
+
+mquon@LAPTOP-ORION MINGW64 /d
+$ cd Workspace
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace
+$ mkdir basic_repo
+
+Create some files inside your local repo and add some content on them:
+mquon@LAPTOP-ORION MINGW64 /d/Workspace
+$ cd basic_repo/
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo
+$ touch index.html
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo
+$ touch styles.css
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo
+$ touch readme.txt
+
+Add, commit, and push these changes to GitHub
+Make some more changes to the local copy of your file and push them to GitHub
+Go to your GitHub account and see your new repo and the changes you've made
+Create a simple txt file that outlines the steps you took and upload the file here.
