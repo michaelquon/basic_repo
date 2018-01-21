@@ -28,7 +28,84 @@ $ touch styles.css
 mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo
 $ touch readme.txt
 
-Add, commit, and push these changes to GitHub
+Add, commit, and push these changes to GitHub:
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        basic_repo_assignment.txt
+        index.html
+        readme.txt
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git add .
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git commit -m "first commit"
+[master (root-commit) 5ad9e28] first commit
+ 4 files changed, 54 insertions(+)
+ create mode 100644 basic_repo_assignment.txt
+ create mode 100644 index.html
+ create mode 100644 readme.txt
+ create mode 100644 styles.css
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git remote add origin https://github.com/michaelquon/basic_repo.git
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.00 KiB | 1.00 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/michaelquon/basic_repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
 Make some more changes to the local copy of your file and push them to GitHub
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git add readme.txt
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git commit -m "second commit to readme.txt"
+[master 5f3080b] second commit to readme.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+mquon@LAPTOP-ORION MINGW64 /d/Workspace/basic_repo (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/michaelquon/basic_repo.git
+   5ad9e28..5f3080b  master -> master
+
 Go to your GitHub account and see your new repo and the changes you've made
+https://github.com/michaelquon/basic_repo
+
 Create a simple txt file that outlines the steps you took and upload the file here.
+https://github.com/michaelquon/basic_repo/blob/master/basic_repo_assignment.txt
